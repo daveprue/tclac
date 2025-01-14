@@ -203,9 +203,9 @@ select:
     id: vswing
     entity_category: config
     options:
-      - "Сверху вниз"
-      - "В верхней половине"
-      - "В нижней половине"
+      - "UP DOWN"
+      - "UPSIDE"
+      - "DOWNSIDE"
     optimistic: true
     restore_value: true
     on_value:
