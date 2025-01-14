@@ -111,7 +111,7 @@ wifi:
   ssid: ${wifi_ssid}
   password: ${wifi_password}
   ap:
-    ssid: "${device_name} Fallback Hotspot"
+    ssid: "Air Conditioner"
     password: "${recovery_pass}"
 
 captive_portal:
@@ -129,7 +129,7 @@ logger:
 # - Переключатели
 switch:
   # Пищалка для подтверждения команд, по умолчанию выключена
-  - name: Beeper
+  - name: " Beeper"
     platform: template
     device_class: switch
     id: beep_mode
@@ -146,7 +146,7 @@ switch:
           id(${device_name}climate).set_beeper_state(false);
   
   # Индикатор уставки температуры на корпусе внутреннего блока, по умолчанию включен
-  - name: Display
+  - name: " Display"
     platform: template
     device_class: switch
     id: display_mode
@@ -163,7 +163,7 @@ switch:
           id(${device_name}climate).set_display_state(false);
   
   # Светодиодная индикация обмена данными с кондиционером, по умолчанию выключена
-  - name: Display on module
+  - name: " Display on Module"
     platform: template
     device_class: switch
     id: ledflash_mode
@@ -179,7 +179,7 @@ switch:
         lambda: !lambda |-
           id(${device_name}climate).set_module_display_state(false);
           
-  - name: Force config
+  - name: " Force Config"
     platform: template
     device_class: switch
     id: force_mode
@@ -199,7 +199,7 @@ switch:
 select:
   # Настройка вертикального качания
   - platform: template
-    name: Vertical swing
+    name: Vertical Swing
     id: vswing
     entity_category: config
     options:
@@ -308,5 +308,5 @@ select:
 
 climate:
   - platform: tclac
-    name: "${device_name} Climate"
+    name: "Climate"
     id: ${device_name}climate
