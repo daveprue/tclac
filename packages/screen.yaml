@@ -10,18 +10,18 @@ sensor:
     filters:
       - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
 
-font:
-  - file: "gfonts://Press Start 2P"
-    id: font1
-    size: 16
-    bpp: 1
-    glyphs: '!"%()+=,-_.:°/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯЫабвгдежзиклмнопрстуфхцчшщъыьэюя'
-    
-  - file: "gfonts://Press Start 2P"
-    id: font2
-    size: 8
-    bpp: 1
-    glyphs: '!"%()+=,-_.:°/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯЫабвгдежзиклмнопрстуфхцчшщъыьэюя'
+#font:
+#  - file: "gfonts://Press Start 2P"
+#    id: font1
+#    size: 16
+#    bpp: 1
+#    glyphs: '!"%()+=,-_.:°/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯЫабвгдежзиклмнопрстуфхцчшщъыьэюя'
+#    
+#  - file: "gfonts://Press Start 2P"
+#    id: font2
+#    size: 8
+#    bpp: 1
+#    glyphs: '!"%()+=,-_.:°/?0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyzАБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯЫабвгдежзиклмнопрстуфхцчшщъыьэюя'
 
 i2c:
   sda: GPIO0
