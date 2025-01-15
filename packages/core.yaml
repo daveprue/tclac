@@ -99,17 +99,17 @@ uart:
   tx_pin: ${uart_tx}
 
 api:
-  encryption:
-    key: "${api_key}"
-
+#  encryption:
+#    key: "${api_key}"
+#
 ota:
 - platform: esphome
-  password: "${ota_pass}"
+#  password: "${ota_pass}"
 
 wifi:
   id: "${device_name}_wifi"
-  ssid: ${wifi_ssid}
-  password: ${wifi_password}
+#  ssid: ${wifi_ssid}
+#  password: ${wifi_password}
   ap:
     ssid: "Air Conditioner"
     password: "${recovery_pass}"
