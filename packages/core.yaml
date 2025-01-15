@@ -98,12 +98,12 @@ uart:
   rx_pin: ${uart_rx}
   tx_pin: ${uart_tx}
 
-api:
+#api:
 #  encryption:
 #    key: "${api_key}"
 #
-ota:
-- platform: esphome
+#ota:
+#- platform: esphome
 #  password: "${ota_pass}"
 
 #wifi:
@@ -114,7 +114,7 @@ ota:
 #    ssid: "Air Conditioner"
 #    password: "${recovery_pass}"
 
-captive_portal:
+#captive_portal:
 
 
 # # # # # # # # # # # # # # # # # # # # # # #
@@ -122,8 +122,8 @@ captive_portal:
 # # # # # # # # # # # # # # # # # # # # # # #
 
 # ОБЯЗАТЕЛЬНО отключаем логгирование через UART
-logger:
-  baud_rate: 0
+#logger:
+#  baud_rate: 0
 
 # Раздел настроек устройства:
 # - Переключатели
